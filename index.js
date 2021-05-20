@@ -6,7 +6,7 @@ app.use(cors())
 app.use(express.static('build'))
 
 
-let persons = [
+const persons = [
     {
       "name": "Tara Purasson",
       "number": "9086423434",
