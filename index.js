@@ -71,8 +71,11 @@ app.post('/api/persons', (req, res) => {
     if(duplicates.length){
         console.log("Duplicate person error")
     }else{
+        console.log("backend api received new person: ", newPerson)
         persons = persons.concat(newPerson);
+        console.log("persons updated. persons is now: ", persons)
         let names = persons.map(person=> person.name)
+        console.log("names updated. names are now: ", names)
         res.send(`<h3>Success</h3><em>${req.body.name} was added!</em><p>persons: ${names}</p>`)
     }
 })
