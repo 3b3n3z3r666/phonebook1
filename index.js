@@ -36,6 +36,11 @@ var persons = [
       "name": "Ada Lovelace",
       "number": "9876543210",
       "id": "8"
+    },
+    {
+      "name":"John Smith",
+      "number":"1234567891",
+      "id":"9"
     }
 ]
 
